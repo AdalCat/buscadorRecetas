@@ -2,6 +2,7 @@ const buscador = document.getElementById("botonBuscar");
 const random = document.getElementById("botonRandom");
 const listaDeComida = document.getElementById("comida");
 const botonVolver = document.getElementById('buttonBack')
+const inputBuscar = document.getElementById('inputBuscar')
 
 // Al cargar la aplicación, borra el contenido del input si hay algo y muestra recetas aleatorias con base en una letra del abecedario (eliminé las letras que no tienen recetas o solo tienen 1 o 2)
 window.addEventListener('load', randomFunction)
@@ -39,6 +40,13 @@ random.addEventListener("click", randomFunction);
 
 // Al hacer click en el botón Buscar
 buscador.addEventListener("click", consulta);
+
+// Al darle enter tras escribir la búsqueda
+inputBuscar.addEventListener("keypress", function(event){
+  if (event.key === 'Enter') {
+    consulta()
+  }
+})
 
 function consulta() {
   let busqueda = document.getElementById("inputBuscar").value.trim();
@@ -103,9 +111,11 @@ function obtenerId(e) {
             //     console.log(ingre)
             // }
             html2 += `
-            <p>${comida.strIngredient1}</p>
+            <h5>Ingredients</h5>
+            <p>${comida.strIngredient1}, ${comida.strMeasure1}</p>
             </div>
             <div class="comida-preparacion">
+            <h5>Recipe</h5>
             <p>${comida.strInstructions}</p>
             </div>
             `;
