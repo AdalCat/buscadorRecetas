@@ -1,0 +1,33 @@
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div style="border-color: #FA635113; background-color: #FA635113;" class="card">
+                <img style="padding: 1em; border-radius: 2rem;" src="https://media.istockphoto.com/photos/green-and-red-enchiladas-with-mexican-sauces-picture-id913649914?k=20&m=913649914&s=612x612&w=0&h=fnIvQeoPD8tpeqnHJxdXnoV5zCAIJAdPqFyyI3g-y74=" class="card-img-to" alt="Imagen receta">
+                <div class="card-body">
+                    <h5 style="text-align: center;" class="card-title">Receta 1</h5>
+                       <p style="text-align: center;" class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div style="border-color: #FA635113; background-color: #FA635113;" class="card">
+                <img style="padding: 1em; border-radius: 2rem;" src="https://media.istockphoto.com/photos/mexican-food-mix-picture-id896165070?k=20&m=896165070&s=612x612&w=0&h=qL-vfoyBGYapL__5XZ7TATxahXYNFMv7sc2cFjFUrxU=" class="card-img-to" alt="Imagen receta">
+                <div class="card-body">
+                    <h5 style="text-align: center;" class="card-title">Receta 2</h5>
+                       <p style="text-align: center;" class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>  
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div style="border-color: #FA635113; background-color: #FA635113;" class="card">
+                <img style="padding: 1em; border-radius: 2rem;" src="https://media.istockphoto.com/photos/traditional-mexican-food-picture-id1213818930?k=20&m=1213818930&s=612x612&w=0&h=L5eqA4-_CFA2lomgwWSgsDeXLm1zRU4tvJQxcYyPIDU=" class="card-img-to" alt="Imagen receta">
+                <div class="card-body">
+                    <h5 style="text-align: center;" class="card-title">Receta 3</h5>
+                       <p style="text-align: center;" class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
+                </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>

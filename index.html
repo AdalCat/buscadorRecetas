@@ -1,90 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Icono de pestaña -->
-    <link rel="icon" href="/src/assets/ICONS/cocinero.png">
-    <!-- Nombre de la pestaña -->
-    <title>Buscador de recetas</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="/src/assets/css/index.css">
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Icono de pestaña -->
+  <link rel="icon" href="/src/assets/ICONS/cocinero.png">
+  <!-- Nombre de la pestaña -->
+  <title>Buscador de recetas</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/src/assets/css/index.css">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
+
 <body>
 
   <!-- Barra de navegacion -->
-    <section>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a href="/index.html"><img width="50px;" src="/src/assets/ICONS/cocinero.png"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Searcher</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="AboutUs.html">About Us</a>
-              </li>
-              </li>
-            </ul>
-          </div>
+  <section>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a href="/index.html"><img width="50px;" src="/src/assets/ICONS/cocinero.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Searcher</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUs.html">About Us</a>
+            </li>
+            </li>
+          </ul>
         </div>
-      </nav> 
-    </section>
+      </div>
+    </nav>
+  </section>
 
+  <div class="cuerpo">
     <!-- Input de busqueda y botones -->
     <section style="padding: 50px 20em 20px; display: flex;">
-        <div class="input-group">
-            <input style="width: 50px" type="text" class="form-control" placeholder="Buscar receta" aria-label="Recipient's username with two button addons">
-        </div>
-        <a style="margin-left: 10px; margin-right: 10px;" class="fcc-btn" href="/////////////////">Search</a>
-        <a class="fcc-btn" href="//////////////">Random</a>  
+      <div class="input-group">
+        <input id="inputBuscar" style="width: 50px" type="text" class="form-control" placeholder="Buscar receta"
+          aria-label="Recipient's username with two button addons">
+      </div>
+      <a id="botonBuscar" style="margin-left: 10px; margin-right: 10px;" class="fcc-btn">Search</a>
+      <a id="botonRandom" class="fcc-btn">Random</a>
 
     </section>
 
     <!-- Tarjetas de resultados -->
     <section>
-      <div class="container mt-5 mb-5">
-        <div class="row justify-content-center">
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div style="border-color: #FA635113; background-color: #FA635113;" class="card">
-                <img style="padding: 1em; border-radius: 2rem;" src="https://media.istockphoto.com/photos/green-and-red-enchiladas-with-mexican-sauces-picture-id913649914?k=20&m=913649914&s=612x612&w=0&h=fnIvQeoPD8tpeqnHJxdXnoV5zCAIJAdPqFyyI3g-y74=" class="card-img-to" alt="Imagen receta">
-                <div class="card-body">
-                    <h5 style="text-align: center;" class="card-title">Receta 1</h5>
-                       <p style="text-align: center;" class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div style="border-color: #FA635113; background-color: #FA635113;" class="card">
-                <img style="padding: 1em; border-radius: 2rem;" src="https://media.istockphoto.com/photos/mexican-food-mix-picture-id896165070?k=20&m=896165070&s=612x612&w=0&h=qL-vfoyBGYapL__5XZ7TATxahXYNFMv7sc2cFjFUrxU=" class="card-img-to" alt="Imagen receta">
-                <div class="card-body">
-                    <h5 style="text-align: center;" class="card-title">Receta 2</h5>
-                       <p style="text-align: center;" class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>  
-                </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div style="border-color: #FA635113; background-color: #FA635113;" class="card">
-                <img style="padding: 1em; border-radius: 2rem;" src="https://media.istockphoto.com/photos/traditional-mexican-food-picture-id1213818930?k=20&m=1213818930&s=612x612&w=0&h=L5eqA4-_CFA2lomgwWSgsDeXLm1zRU4tvJQxcYyPIDU=" class="card-img-to" alt="Imagen receta">
-                <div class="card-body">
-                    <h5 style="text-align: center;" class="card-title">Receta 3</h5>
-                       <p style="text-align: center;" class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
-                </div>
-          </div>
-        </div>
+      <div class="resultados">
+        <div id="comida">
+          <!-- Resultado -->
+
         </div>
       </div>
     </section>
+  </div>
 
-    
-    <!-- JavaScript Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+  <!-- JavaScript -->
+  <script src="/src/js/index.js"></script>
+
+
+  <!-- JavaScript Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
