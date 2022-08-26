@@ -98,7 +98,7 @@
 }
 
 /* No se ha encontrado nada */
-.sinCoinsidencia {
+.sinCoincidencia {
     grid-template-columns: 1fr!important;
     color: rgb(0, 0, 0);
     font-size: 1.8rem;
