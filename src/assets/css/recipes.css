@@ -1,0 +1,99 @@
+/* .container {
+    padding: 3em;
+}
+
+h1 {
+    margin-bottom: 1em;
+    text-align: center;
+} */
+
+recipe {
+    padding: 1em 4em;
+}
+
+.orange {
+    background-color: #FA6351;
+}
+
+.btn {
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 4em;
+}
+
+.btn:hover {
+    color: #ffcac4;
+}
+
+.card-body {
+    font-family: 'Nunito Sans', sans-serif;
+    border: none;
+}
+
+.card {
+    border: none;
+    background-color: #FA635114;
+    border-radius: 15px;
+}
+
+.image-recipe {
+    padding: 2em 2em 1em 2em;
+    border-radius: 15px;
+}
+
+.recipe {
+    height: 35em;
+    padding: 3em;
+}
+
+.card-text {
+    margin: 2em;
+}
+
+/* h6 {
+    margin: 1em 2em;
+    font-weight: 600;
+} */
+
+#buttonBack {
+    display: none;
+}
+
+
+/* Media queries */
+
+@media (max-width: 575px) {
+    body {
+        padding: 1em;
+    }
+
+    recipe {
+        padding: 2em;
+    }
+    .btn {
+        margin: 1em;
+    }
+    .recipe {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        padding: 1em;
+    }
+
+    recipe {
+        padding: 2em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        padding: 1em;
+    }
+
+    recipe {
+        padding: 2em;
+    }
+}

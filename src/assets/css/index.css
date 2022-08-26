@@ -56,6 +56,7 @@
 .comida-imagen img{
     width: 100%;
     display: block;
+    z-index: 0;
 }
 
 .comida-nombre {
@@ -77,7 +78,8 @@
 /* Botones para ver la receta */
 
 .comida-boton {
-    border-radius: 5rem;
+    z-index: 2;
+    /* border-radius: 5rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
@@ -90,12 +92,12 @@
     box-shadow: none;
     display: block;
     width: 175px;
-    margin: 1rem auto;
+    margin: 1rem auto; */
 }
 
-.comida-boton:hover {
+/* .comida-boton:hover {
     background: #FA6351;
-}
+} */
 
 /* No se ha encontrado nada */
 .sinCoincidencia {
