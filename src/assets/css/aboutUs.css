@@ -5,21 +5,46 @@
 }
 
 body {
-    background-color: #fffbf7;
+    background-color: #fff;
+}
+
+p, h5 {
+    font-family: 'Nunito';
+    font-size: 20px;
+}
+
+.about {
+    padding-top: 100px;
+}
+
+.texto {
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: justify;
+    padding-bottom: 50px;
+   
 }
 
 .presentacion > *{
     display: flex;
     justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    
 }
 
 .card {
-    display: flex;
-    justify-content: center;
+   
     justify-items: center;
     text-align: center;
     vertical-align: middle;
     flex-direction: column;
+    border-style: none;
+    
+}
+
+.card-title {
+    padding-bottom: 10px;
 }
 
 .card > img {
@@ -35,8 +60,15 @@ body {
     border-radius: 50%;
 }
 
-.social > img {
+img {
     width: 30px;
     border-radius: 50%;
+    
 }
 
+/*dispositivos moviles en vista  viewport (vertical) */
+@media (max-width: 575px) { 
+    
+    /*  */
+  
+}
