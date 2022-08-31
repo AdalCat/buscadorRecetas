@@ -31,3 +31,38 @@
         </div>
       </div>
     </section>
+
+
+
+
+    <section class="container">
+        <back class="row">
+            <section class="col-3">
+                <a href="../index.html"><button type="button" class="btn orange shadow-sm">Volver</button></a>
+            </section>
+        </back>
+        <recipe class="row g-5">
+            <mainRecipe class="card col-lg-5 shadow-sm">
+                <img class="card-img-top image-recipe" src="https://www.clara.es/medio/2021/12/16/que-comer-hoy-ideas_21beeb02_1200x630.jpg" alt="Card image cap">
+                <div class="card-body text-center">
+                    <h6 class="card-title">Nombre del platillo</h6>
+                    <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tortor sem, lacinia eget fringilla ac, varius ac ex. Vestibulum tempor, sem at bibendum imperdiet, lectus leo condimentum dui, sit amet ullamcorper dui odio et quam. Vestibulum vitae sollicitudin ante. Vestibulum quis metus odio.</p>
+                </div>
+            </mainRecipe>
+            <prepareRecipe class="col-lg-7">
+                <div class="card card-body recipe shadow-sm">
+                    <h6>Ingredientes</h6>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet,</li>
+                        <li>consectetur adipiscing elit.</li>
+                        <li>Proin tortor sem, lacinia eget</li>
+                        <li>fringilla ac, varius ac ex.</li>
+                        <li>Vestibulum tempor, sem at bibendum</li>
+                        <li>imperdiet, lectus leo</li>
+                    </ul>
+                    <h6>Preparación</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tortor sem, lacinia eget fringilla ac, varius ac ex. Vestibulum tempor, sem at bibendum imperdiet, lectus leo condimentum dui, sit amet ullamcorper dui odio et quam. Vestibulum vitae sollicitudin ante. Vestibulum quis metus odio. Sed et aliquam nibh, at pretium nibh. Maecenas non eros at ligula convallis faucibus. Mauris ac sem ex.</p>
+                </div>
+            </prepareRecipe>
+        </recipe>
+    </section> 
