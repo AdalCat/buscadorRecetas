@@ -29,6 +29,7 @@ function randomFunction() {
         })};
         listaDeComida.innerHTML = html;
         botonVolver.style.display = 'none'
+        listaDeComida.classList.remove('sinCoincidencia')
         botonVolver.href = '../index.html'
     })}
     document.getElementById('inputBuscar').value = ''
@@ -115,7 +116,7 @@ function obtenerId(e) {
             <p>${comida.strIngredient1}, ${comida.strMeasure1}</p>
             </div>
             <div class="comida-preparacion">
-            <h5>Recipe</h5>
+            <h5>Instructions</h5>
             <p>${comida.strInstructions}</p>
             </div>
             `;
