@@ -7,10 +7,6 @@ h1 {
     text-align: center;
 } */
 
-recipe {
-    padding: 1em 4em;
-}
-
 .orange {
     background-color: #FA6351;
 }
@@ -55,9 +51,7 @@ recipe {
     font-weight: 600;
 } */
 
-#buttonBack {
-    display: none;
-}
+
 
 
 /* Media queries */
@@ -65,26 +59,15 @@ recipe {
 @media (max-width: 575px) {
     body {
         padding: 1em;
-    }
-
-    recipe {
-        padding: 2em;
-    }
+    }   
     .btn {
         margin: 1em;
-    }
-    .recipe {
-        width: 100%;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
     body {
         padding: 1em;
-    }
-
-    recipe {
-        padding: 2em;
     }
 }
 

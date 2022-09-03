@@ -15,8 +15,13 @@
 
 /* Botones de search y random */
 
+.searchBar {
+    padding: 2em 5em;
+    display: flex;
+}
+
 .fcc-btn {
-    border-radius: 5rem;
+    border-radius: 0.5em;
     background-color: #FA6351;
     color: white;
     padding: 15px 25px;
@@ -27,6 +32,8 @@
 
 .fcc-btn:hover {
     background: #FA6351;
+    color: lightgrey;
+    cursor: pointer;
 }
 
 /* Input de busqueda */
@@ -36,11 +43,30 @@
 	box-shadow: 0 4px 5px -1px #FA6351, 0 2px 5px -1px #FA6351;
 }
 
-/* Tarjetas */
-
-.resultados{
-    margin-top: 4rem;
+#input-buscar {
+    width: 100%;
 }
+
+#botonBuscar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#comida {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em 1.5em;
+}
+
+#buttonBack {
+    display: none;
+}
+
+#backButton {
+    padding: 10px;
+}
+
+/* Cards de recetas */
 
 .comida-articulo {
     border-radius: 1rem;
@@ -60,7 +86,7 @@
 }
 
 .comida-nombre {
-    padding: 1.5rem 0.5rem;
+    padding: 1.5em;
 }
 
 .comida-nombre h3 {
@@ -77,8 +103,8 @@
 
 /* Botones para ver la receta */
 
-.comida-boton {
-    z-index: 2;
+.comida-boton:hover {
+    cursor: pointer;
 }
 
 /* No se ha encontrado nada */
@@ -93,28 +119,65 @@
 
 /* Parte responsiva media queries */
 
-@media screen and (min-width: 600px){
-    .input-group{
-        width: 540;
-        margin-left: auto;
-        margin-right: auto;
+@media (max-width: 575px) {
+    .searchBar {
+        padding: 0;
+        margin: 0;
+        display: inline;
     }
+
+    #input-buscar {
+        width: 100%;
+    }
+    
+    .fcc-btn {
+        margin-top: 5em;
+    }
+
+    #comida {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.4em;
+    }
+
 }
 
-@media screen and (min-width: 768px){
-    #comida{
-        display: grid;
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #comida {
         grid-template-columns: repeat(2, 1fr);
-        gap:    2rem;
     }
     .comida-articulo{
         margin: 0;
     }
 
-}
+    .searchBar {
+        padding: 0;
+        margin: 0;
+        display: inline;
+    }
 
-@media screen and (min-width: 992px){
-    #comida{
+    #input-buscar {
+        width: 100%;
+    }
+    
+    .fcc-btn {
+        margin-top: 5em;
+    }
+    
+    .resultados{
+        margin-top: 5em;
+    } 
+
+} 
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #comida {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    #input-buscar {
+        width: 100%;
+    }
+
 }
