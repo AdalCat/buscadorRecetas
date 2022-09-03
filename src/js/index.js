@@ -17,7 +17,7 @@ function randomFunction() {
       if (data.meals) {
         data.meals.forEach((comida) => {
 
-          // Creamos toda la card
+      // Creamos toda la card
       const cardFragment = document.createDocumentFragment();
       let comidaArticulo = cardFragment
         .appendChild(document.createElement('div'))
@@ -173,6 +173,7 @@ function obtenerId(e) {
         mealArray = Object.values(data.meals[0]);
         var ingredientsList = [];
         var measuresList = [];
+
         //Obteniendo los ingredientes en un array
         for (let i = 9; i <= 28; i++) {
           if (!mealArray[i]) break;
