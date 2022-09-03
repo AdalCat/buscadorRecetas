@@ -117,7 +117,13 @@
     width: 100%;
 }
 
+.layout {
+    padding: 50px 50px 0px 50px;
+}
+
 /* Parte responsiva media queries */
+
+
 
 @media (max-width: 575px) {
     .searchBar {
@@ -137,6 +143,21 @@
     #comida {
         grid-template-columns: repeat(1, 1fr);
         gap: 0.4em;
+    }
+
+    #buttonBack {
+        width: 100%;
+    }
+    
+    .col-3 {
+        width: 100%;
+        margin: 1em;
+        padding: 1em;
+        justify-content: center;
+    }
+
+    .resultados {
+        margin-top: 1em;
     }
 
 }
@@ -164,8 +185,12 @@
     }
     
     .resultados{
-        margin-top: 5em;
+        margin-top: 3em;
     } 
+
+    .col-3 {
+        margin: 2em;
+    }
 
 } 
 
