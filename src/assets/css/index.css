@@ -117,7 +117,17 @@
     width: 100%;
 }
 
+.layout {
+    padding: 50px 50px 0px 50px;
+}
+
 /* Parte responsiva media queries */
+
+@media (max-width: 675px) {
+    .layout {
+        
+    }
+}
 
 @media (max-width: 575px) {
     .searchBar {
