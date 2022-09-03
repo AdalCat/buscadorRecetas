@@ -145,6 +145,21 @@
         gap: 0.4em;
     }
 
+    #buttonBack {
+        width: 100%;
+    }
+    
+    .col-3 {
+        width: 100%;
+        margin: 1em;
+        padding: 1em;
+        justify-content: center;
+    }
+
+    .resultados {
+        margin-top: 1em;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -170,8 +185,12 @@
     }
     
     .resultados{
-        margin-top: 5em;
+        margin-top: 3em;
     } 
+
+    .col-3 {
+        margin: 2em;
+    }
 
 } 
 
