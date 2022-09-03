@@ -1,0 +1,181 @@
+/* all */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Barra de navegacion */
+
+.navbar {
+    border: 0 !important;
+	box-shadow: 0 4px 6px -1px #FA6351, 0 2px 4px -1px #FA6351;
+}
+
+/* Botones de search y random */
+
+.searchBar {
+    padding: 2em 5em;
+    display: flex;
+}
+
+.fcc-btn {
+    border-radius: 0.5em;
+    background-color: #FA6351;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    box-shadow: inset 0 -3px 0 0 red;
+    box-shadow: none;
+}
+
+.fcc-btn:hover {
+    background: #FA6351;
+    color: lightgrey;
+    cursor: pointer;
+}
+
+/* Input de busqueda */
+
+.input-group {
+    border: 0 !important;
+	box-shadow: 0 4px 5px -1px #FA6351, 0 2px 5px -1px #FA6351;
+}
+
+#input-buscar {
+    width: 100%;
+}
+
+#botonBuscar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#comida {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em 1.5em;
+}
+
+#buttonBack {
+    display: none;
+}
+
+#backButton {
+    padding: 10px;
+}
+
+/* Cards de recetas */
+
+.comida-articulo {
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    margin: 2rem 0;
+}
+
+.comida-imagen img{
+    width: 100%;
+    display: block;
+    z-index: 0;
+}
+
+.comida-nombre {
+    padding: 1.5em;
+}
+
+.comida-nombre h3 {
+    font-size: 1.4rem;
+}
+
+.cuerpo {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+/* Botones para ver la receta */
+
+.comida-boton:hover {
+    cursor: pointer;
+}
+
+/* No se ha encontrado nada */
+.sinCoincidencia {
+    display: grid;
+    grid-template-columns: 1fr!important;
+    color: rgb(0, 0, 0);
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+/* Parte responsiva media queries */
+
+@media (max-width: 575px) {
+    .searchBar {
+        padding: 0;
+        margin: 0;
+        display: inline;
+    }
+
+    #input-buscar {
+        width: 100%;
+    }
+    
+    .fcc-btn {
+        margin-top: 5em;
+    }
+
+    #comida {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.4em;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #comida {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .comida-articulo{
+        margin: 0;
+    }
+
+    .searchBar {
+        padding: 0;
+        margin: 0;
+        display: inline;
+    }
+
+    #input-buscar {
+        width: 100%;
+    }
+    
+    .fcc-btn {
+        margin-top: 5em;
+    }
+    
+    .resultados{
+        margin-top: 5em;
+    } 
+
+} 
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #comida {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #input-buscar {
+        width: 100%;
+    }
+
+}
