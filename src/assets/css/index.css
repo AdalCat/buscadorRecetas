@@ -123,11 +123,7 @@
 
 /* Parte responsiva media queries */
 
-@media (max-width: 675px) {
-    .layout {
-        
-    }
-}
+
 
 @media (max-width: 575px) {
     .searchBar {
