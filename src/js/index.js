@@ -198,7 +198,7 @@ function obtenerId(e) {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${articulo.dataset.id}`)
     .then((response) => response.json())
     .then((data) => {
-      mostrarReceta (data, articulo)
+      mostrarReceta (data)
     });
   }
 }
